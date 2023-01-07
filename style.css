@@ -1,3 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: grey;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,h3{
+    margin-bottom: 20px;
+}
+
+/* TASK CONTAINER */
+
+.task__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+    padding: 10px;
+}
+
+.task__container .task__name{
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#deselect{
+    background-color: #1d3557;
+    color: white;
+}
+
+/* schedule design */
+
+.schedule__container{
+    background: linear-gradient(#ebf4f5, #b5c6e0);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.days__container{
+    display: flex;
+}
+
+.corner{
+    width: 50px;
+    height: 70px;
+    margin: 2px;
+}
+
+.day{
+    width: 100px;
+    border: solid 1px white;
+    color: #9bafd9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+.part__day{
+    display: flex;
+}
+
+.time{
+    width: 50px;
+    height: 70px;
+    color: white;
+    background-color: #103783;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+.task{
+    background-color: white;
+    height: 70px;
+    width: 100px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
